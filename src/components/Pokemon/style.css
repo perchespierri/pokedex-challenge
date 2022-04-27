@@ -1,0 +1,27 @@
+.pokemon-container, .pokemon-name {
+  display: flex;
+  justify-content: center;
+}
+
+.pokemon-name {
+  display: flex;
+  align-items: center;
+    
+  margin-top: 1rem;
+  height: 2rem;
+
+  border: 2px solid #000ba3;
+  border-radius: 0.5rem;
+    
+  width: fit-content;
+      
+  background-color: #e8dede;      
+}
+
+.lists-container {
+  width: 20rem; 
+}
+
+.lists-container ul {
+  margin-bottom: 2rem;  
+}

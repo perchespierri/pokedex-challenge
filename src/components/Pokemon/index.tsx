@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { capitalizeString } from '../../global/functions';
+import "./style.css";
 
 const Pokemon = () => {
   const [pokemon, setPokemon] = useState<any>("");
@@ -17,17 +18,21 @@ const Pokemon = () => {
   if (!pokemon) return <h1>LOADING</h1>
 
   return (
-    <>
-      <h1>
-        {capitalizeString(pokemon.name)}
-      </h1>
+    <div>
+      <div className="pokemon-container">
+        <h1 className="pokemon-name">
+          {pokemon.name.toUpperCase()}
+        </h1>
+      </div>
+
+      <div className="pokemon-container">
+        <img
+          src={pokemon.sprites.front_default} 
+          alt={pokemon.name} 
+        />
+      </div>  
       
-      <img 
-        src={pokemon.sprites.front_default} 
-        alt={pokemon.name} 
-      />
-      
-      <div>
+      <div className="lists-container">
         <h2>Abilities</h2>
         <ul>
           {pokemon.abilities.map((item: any) => (
@@ -65,7 +70,7 @@ const Pokemon = () => {
           ))}
         </ul>
       </div>
-    </>
+    </div>
   );
 };
 

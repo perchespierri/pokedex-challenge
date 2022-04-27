@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: #41a6ff;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+input, button, a {
+    cursor: pointer;
+}

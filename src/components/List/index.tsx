@@ -1,5 +1,7 @@
 import { ChangeEvent, EventHandler, useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import {Card, PageButton} from '../';
+import "./style.css";
 
 const List = () => {
   const [inputField, setInputField] = useState<string>('');
@@ -31,6 +33,7 @@ const List = () => {
   return (
     <div>
       <input
+      className="list-input"
         type="input"
         value={inputField}
         onChange={(event) => handleInput(event)}
@@ -39,9 +42,9 @@ const List = () => {
       {pokemonFilter && (  
         <ul>
           {pokemonFilter.map(({ name }) => (
-            <li key={name}>
-              <Card name={name} />    
-            </li>  
+            <Link to={`/pokemon/${name}`}>
+              <Card key={name} name={name} />
+            </Link>
             ))}
         </ul>
       )}

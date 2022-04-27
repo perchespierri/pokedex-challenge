@@ -1,0 +1,26 @@
+.button-div {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+button {
+  border: 1px solid #e8dede;
+
+  background-color: #000ba3;
+  color: #e8dede;
+
+  padding: 0.5rem 1rem;
+  width: 6rem;
+
+  text-align: center;
+  font-size: 1rem;
+
+  opacity: 0.8;
+  transition: 0.8s;
+}
+  
+
+:hover {
+  opacity: 1;
+}

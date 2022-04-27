@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
 import { capitalizeString } from '../../global/functions';
+import "./style.css";
 
 interface CardProp {
   name: string
@@ -8,9 +8,9 @@ interface CardProp {
 const Card = ({ name }: CardProp) => {
 
   return (
-      <Link to={`/pokemon/${name}`}>
-        {capitalizeString(name)}
-      </Link>
+    <li className="pokemon-card">
+      {capitalizeString(name)}
+    </li>  
   );
 };
 

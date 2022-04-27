@@ -1,5 +1,6 @@
 import { List, Pokemon, Header, PageNotFound } from './components';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import "./global/styles/style.css"
 
 export default function App() {
   return (
