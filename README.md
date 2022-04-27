@@ -1,4 +1,11 @@
-# TypeScript React template
+# POKEDEX CHALLENGE
+For study purposes I built a pokedex in TypeScript.
 
-- ```$ npx create-react-app . --template typescript```
-- Other necessary types should be installed later, as they're needed, in order to keep this template broad for myself
+## Running the app:
+```$ git clone git@github.com:perchespierri/pokedex-challenge.git```
+```$ npm install ```
+```$ npm start ```
+
+## It's on Vercel:
+Check it out:
+https://pokedex-challenge-pied.vercel.app/
